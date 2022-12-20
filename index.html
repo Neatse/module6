@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenWeatherMap</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <div class = "input-section">
+            <h2>Search for a City:</h2>
+            <input type="text" id="city-input" placeholder="city name">
+            <button type="button" id = "search-btn">Search</button>
+
+            <hr>
+
+            <div id="recent-search">
+                <button class = "city-btn" value = "Atlanta">Atlanta</button>
+            </div>
+            
+        </div>
+
+        <div>
+            <div class="details">
+                <h2><span id = "city"></span> <img src="" id = "weather-img" style ="display: none;" class="weather-img" alt="weather illustration"></h2>
+                <p id = "temp"></p>
+                <p id = "wind"></p>
+                <p id = "humidity"></p>
+            </div>
+
+            <h3>5-Day Forecast:</h3>
+
+            <div class="forecast" id = "forecast"></div>
+        </div>
+    </main>
+</body>
+</html>
